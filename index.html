@@ -33,12 +33,17 @@
                     <input type="text" name="income1" id="income1" class="form-control pr-5 currency-input">
                     <label for="income2" class="form-label">Partner income</label>
                     <input type="text" name="income2" id="income2" class="form-control pr-5 currency-input">
+                    <input type="range" class="form-range" min="0" max="10000" step="100" id="income2-range">
                     <p class="lead" id="ratio">Expense/Income ratio:</p>
+                    <div>
+                        <canvas id="expenseIncomeChart"></canvas>
+                    </div>
                 </div>
 
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="javascript/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="./javascript/script.js"></script>
     </body>
 </html>
