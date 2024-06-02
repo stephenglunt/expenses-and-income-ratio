@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: true
@@ -201,5 +202,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     incomeField2.value = formatCurrency(incomeSlider.value);
+
+    window.addEventListener('resize', () => {
+        incomeExpenseChart.resize();
+    });
 
 });
